@@ -1,0 +1,16 @@
+[package]
+name = "esc-controller"
+version = "0.1.0"
+edition = "2021"
+description = "Rust library for controlling a 2S-7S brushless ESC via PWM/servo signal programming"
+license = "MIT"
+
+[features]
+default = []
+std = []
+defmt = ["dep:defmt"]
+
+[dependencies]
+defmt = { version = "0.3", optional = true }
+
+[dev-dependencies]
